@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}
+  " />
+  <link rel="stylesheet" href="{% static 'css/texto/texto.css' %}" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&family=Inclusive+Sans&family=Oswald:wght@400;600&family=Poppins:ital,wght@1,600;1,800&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body class="w-100">
+  {% block body %}{% endblock body %}
+
+
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/redirecciones/redireccion_link.js'%}"></script>
+
+</body>
+<footer class="container text-center d-none">
+
+  <p>iconos suministrados por</p>
+  <a class="text-center container" href="https://www.flaticon.es/iconos-gratis/css" title="css iconos">Muhammad Ali</a>
+  y
+  <a class="text-center container " href="https://www.flaticon.es/iconos-gratis/html" title="html iconos">Maan</a>
+</footer>
+
+</html>

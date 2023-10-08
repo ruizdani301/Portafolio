@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} Presentacion {% endblock title %}
+
+{% block body %}
+<div class=" container vw-100" style="font-size: 10vw;">
+  <div class="text-end nombre">Daniel <p class="ruiz">Ruiz</p>
+  </div>
+</div>
+
+<!-- cards cards-->
+<div class=" container">
+  <p class="container  text-center texto-cv" style="font-size: 3vw;">Proyectos</p>
+  <div class="row text-center justify-content-center">
+    <div class="card col-sm-3" style="width: 18rem;">
+      <img src="{% static 'img/logo_wallet.png' %}" class="card-img-top h-70" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Digital wallet</h5>
+        <p class="card-text texto-cv">MVP de una billetera digital pueden ver
+        </p>
+        <a href="https://c13-30-t-python.vercel.app/login" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary">Ver proyecto</a>
+      </div>
+    </div>
+    <div class="card col-sm-3" style="width: 18rem;">
+      <img src="{% static 'img/gestor_publico.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Gestor de personal</h5>
+        <p class="card-text texto-cv">Programa que realiza la Gestiòn de empleados de los departamentos de una empresa.
+        </p>
+        <a href="#" class="btn btn-primary">Pendiente</a>
+      </div>
+    </div>
+    <div class="card col-sm-3" style="width: 18rem;">
+      <img src="{% static 'img/imagenes.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">App imagenes</h5>
+        <p class="card-text texto-cv">Participe en el desarrollo de una aplicaciòn implementando
+          nuevas funcionalidades,
+          esta app crea imágenes personalizadas para ser usar en redes sociales.
+        </p>
+        <a href="http://creatupubli.coopervision.t2o.com/" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary">Ver proyecto</a>
+      </div>
+    </div>
+    <div class="card col-sm-3" style="width: 18rem;">
+      <img src="{% static 'img/energia_barras.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Energias</h5>
+        <p class="card-text texto-cv">Participe en el desarrollo de una aplicaciòn para una empresa de energia, que
+          buscaba tratar los datos de producción energetica suminisrados por una API y visualizarlos deacuerdo a las
+          necesidades
+        </p>
+        <!--<a href="#" class="btn btn-primary">Ver proyecto</a>-->
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--Fin cards-->
+
+<div class="container mt-5">
+
+  <div class="row">
+    <!-- Contenedor de video -->
+    <div class="col-md-8 order-md-last">
+      <div class="container">
+        <!-- 1:1 aspect ratio -->
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Sak1s0bFcYU?si=QBS21dJZBILRVVDp"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="container mt-5">
+
+        <div class="container ">
+
+        </div>
+        <!-- Espacio de contacto -->
+        <div class="row">
+          <!--CURRICULUM-->
+          <div class="container col">
+            <div id="cvesp" class="text-center texto-cv imgcv">
+              <img src="{% static 'img/logos/cv.png' %}" class="d-block w-100 pointer" alt="...">
+              Español
+
+            </div>
+
+          </div>
+          <div class="container col">
+            <div id="cving" class="text-center texto-cv imgcv">
+              <img src="{% static 'img/logos/cv.png' %}" class="d-block w-100 h-80 pointer" alt="...">
+              English
+            </div>
+          </div>
+        </div>
+        <!--Botones-->
+        <div class="d-grid gap-2 col-6 mx-auto mt-5">
+          <a class="btn btn-outline-primary text-white " href="http://www.linkedin.com/in/daniel-ruiz" target="_blank"
+            rel="noopener noreferrer">Linkedin
+          </a>
+
+          <a class="btn btn-outline-secondary text-white" href="https://github.com/ruizdani301" target="_blank"
+            rel="noopener noreferrer">GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mt-5 mb-5">
+  <div class="row wv-100">
+    <div src="" class="imgcv col">
+      <img src="{% static 'img/logos/django.png' %}" class="w-100 h-70" alt="...">
+    </div>
+    <div src="" class="imgcv col">
+      <img src="{% static 'img/logos/python.png' %}" class="w-100 h-70" alt="...">
+    </div>
+    <div src="" class="imgcv col ">
+      <img src="{% static 'img/logos/html_new.png' %}" class="w-100 h-70" alt="...">
+    </div>
+    <div class="imgcv col">
+      <img src="{% static 'img/logos/archivo-css.png' %}" class="w-100 h-70" alt="...">
+    </div>
+    <div src="" class="imgcv col">
+      <img src="{% static 'img/logos/js.png' %}" class="w-100 h-70" alt="...">
+    </div>
+    <div src="" class="imgcv col">
+      <img src="{% static 'img/logos/sql.png' %}" class="w-100 h-70" alt="...">
+    </div>
+  </div>
+</div>
+</div {% endblock body %}
